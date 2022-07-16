@@ -1,7 +1,13 @@
 <template>
   <div style="padding: 0 20px; display: flex; flex-direction: column">
     <h1 id="title-text">WHAT'S NEW</h1>
-    <whats-new-item v-for="post in posts" :key="post.picUrl" :pic-url="post.picUrl" :title="post.title" :body="post.body"/>
+    <whats-new-item
+      v-for="post in posts"
+      :key="post.picUrl"
+      :pic-url="post.picUrl"
+      :title="post.title"
+      :body="post.body"
+    />
     <p>Procuras algo especifico?</p>
     <div
       style="
@@ -12,7 +18,12 @@
         margin-bottom: 32px;
       "
     >
-      <small-item v-for="cate in categories" :key="cate.picUrl" :pic-url="cate.picUrl" :title="cate.title" />
+      <small-item
+        v-for="cate in categories"
+        :key="cate.picUrl"
+        :pic-url="cate.picUrl"
+        :title="cate.title"
+      />
     </div>
     <button>Mapa</button>
   </div>
@@ -45,30 +56,30 @@ export default {
       ],
       categories: [
         {
-          picUrl: 'src/assets/categories/cate-1.jpg',
-          title: 'Restaurantes'
+          picUrl: "src/assets/categories/cate-1.jpg",
+          title: "Restaurantes",
         },
         {
-          picUrl: 'src/assets/categories/cate-2.jpg',
-          title: 'Praias'
+          picUrl: "src/assets/categories/cate-2.jpg",
+          title: "Praias",
         },
         {
-          picUrl: 'src/assets/categories/cate-3.jpg',
-          title: 'Cafés'
+          picUrl: "src/assets/categories/cate-3.jpg",
+          title: "Cafés",
         },
         {
-          picUrl: 'src/assets/categories/cate-4.jpg',
-          title: 'Bares'
+          picUrl: "src/assets/categories/cate-4.jpg",
+          title: "Bares",
         },
         {
-          picUrl: 'src/assets/categories/cate-5.jpg',
-          title: 'Parques'
+          picUrl: "src/assets/categories/cate-5.jpg",
+          title: "Parques",
         },
         {
-          picUrl: 'src/assets/categories/cate-6.jpg',
-          title: 'Museus'
-        }
-      ]
+          picUrl: "src/assets/categories/cate-6.jpg",
+          title: "Museus",
+        },
+      ],
     };
   },
 };

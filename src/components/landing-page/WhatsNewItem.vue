@@ -1,5 +1,5 @@
 <template>
-  <div id="container-div">
+  <div id="container-div" @click="$router.push({ name: 'details' })">
     <div
       id="thumb-div"
       :style="{ backgroundImage: 'url(' + picUrl + ')' }"
